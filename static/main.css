@@ -1,0 +1,205 @@
+
+:root{
+    --shadow: 0 0 5em rgba(0, 0, 0, .1);
+    --shadow-thin: 0 0 1em rgba(0, 0, 0, .3);
+    --shadow-thick: 0 0 5em rgba(0, 0, 0, .2);
+
+    --font-color: #666;
+    --font-shadow: 0 0 5px #fff, 0 2px 5px #fff;
+}
+
+html, body{
+    height: 99%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+	overflow:hidden;
+	cursor: url("01.cur"),auto;
+}
+
+
+main{
+    width: 100%;
+    margin: auto;
+    padding: 4em 1.5em;
+    max-width: 60em;
+	height: 200px;
+	text-align:center
+	
+}
+
+.close{
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	border: 1px solid #ccc;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+    line-height: 17px;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+.input-box{
+    display: flex;
+    position: relative;
+    padding: .5em 1em;
+    border-radius: 3em;
+    background: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+    box-shadow: var(--shadow);
+    transition: box-shadow .3s;
+}
+.scwy {
+    width: 100px;
+	 font-weight:bolder;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background-color 0.3s;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 24px;
+	margin-left: 8px;
+}
+  .sswyd {
+            width: 500px;
+            height: 550px;
+            background-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: box-shadow 0.3s;
+            border-radius: 10px;
+            margin: auto;
+			margin-top: 0px;
+            position: absolute;
+            display: none;
+            left: 0;
+            right: 0;
+		
+        }
+
+        .sswyd:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+			}
+
+.scd {
+  width: 216px;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.scd:hover {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+  outline: 2px solid black;
+}
+
+.scwy:hover {
+    background-color: white;
+	cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.input-box:hover{
+    box-shadow: var(--shadow-thick);
+}
+
+.input-box input{
+    flex: 1 1 auto;
+    max-width: 100%;
+    border-radius: 1;
+    border: none;
+    margin: 0 1em;
+	cursor: url("06.cur"),auto;
+}
+	
+.shizhong{
+	text-shadow: 2px 2px 4px black;
+	color: #fff;
+	font-size: 32px;	
+	display: inline-block;
+}
+.cv{
+	opacity: 0;
+	display: none;
+}
+.cx{
+	width: 128px;
+	border-radius: 2em;
+	
+}
+.jiantou{
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(45deg, GhostWhite, GhostWhite 50%, yellowgreen 50%, yellowgreen 100%);
+  border-radius: 0em;
+  margin-left: 32px;
+  background: linear-gradient(45deg, GhostWhite, GhostWhite 50%, transparent 50%, transparent 100%);
+}
+.navi-search{
+    margin-bottom: 5em;
+	margin-top:16px ;
+}
+
+.search-select{
+    cursor: pointer;
+}
+
+.search-select .iconfont{
+    font-size: 1.5em;
+    line-height: 2.5rem;
+}
+
+.search-selector{
+    top: 3em;
+    opacity: 0;
+    padding: .75em 0;
+    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: var(--shadow);
+    transform: scale(1, 0);
+    transform-origin: top center;
+    transition: opacity .3s, transform .3s, visibility .3s;
+}
+
+.circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: auto;
+  margin-top: 18px;
+  text-align:center;
+}
+
+.circle:hover {
+  border: 4px solid pink;
+}
+
+.qd {
+ 
+  border-radius: 10px;
+  background-color: #faf0f0; 
+  box-shadow: 0 0px 4px black; 
+  transition: all 0.3s;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 3px 2.5rem;
+}
+
+.qd:hover {
+  outline: 4px solid #f5b6b1;
+}
+.qhbeijing{
+	cursor: pointer;
+}
